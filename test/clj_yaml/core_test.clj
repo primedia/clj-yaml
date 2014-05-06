@@ -1,7 +1,7 @@
 (ns clj-yaml.core-test
-  (:use clojure.test)
-  (:use clj-yaml.core)
-  (:import [java.util Date]))
+  (:require [clojure.test :refer :all]
+            [clj-yaml.core :refer :all])
+  (:import java.util.Date))
 
 (def nested-hash-yaml
   "root:\n  childa: a\n  childb: \n    grandchild: \n      greatgrandchild: bar\n")
